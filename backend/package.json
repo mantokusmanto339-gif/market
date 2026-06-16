@@ -1,0 +1,31 @@
+{
+  "name": "clove-backend",
+  "version": "1.0.0",
+  "description": "Clove Multi-Vendor E-Commerce Platform - Backend",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "migrate": "node src/database/migrations/runMigrations.js",
+    "seed": "node src/database/seeders/runSeeders.js",
+    "test": "jest --detectOpenHandles",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "keywords": ["e-commerce", "marketplace", "multi-vendor"],
+  "author": "mantokusmanto339-gif",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.1.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
